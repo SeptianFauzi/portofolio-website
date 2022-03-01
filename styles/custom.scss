@@ -1,0 +1,44 @@
+
+
+$theme-colors: (
+    "secondary": #8A61CD,
+    "teal" : #B8FEFB,
+    "primary" :  #330A59
+    // "danger": teal
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@include media-breakpoint-down(lg) {
+    .display-3 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+     a  {
+        font-size: 1em;
+    }
+    .active-scroll > .active {
+        font-size: 1em !important;
+    }
+}
+@include media-breakpoint-down(md) {
+    // .display-3 {
+    //     font-size: 2em;
+    // }
+    // h1 {
+    //     font-size: 1.5em;
+    // }
+    // p {
+    //     font-size: 0.9em;
+    // }
+    // h4{
+    //     font-size: 0.9em;
+    // }
+     a  {
+        font-size: 0.8em;
+    }
+    .active-scroll > .active {
+        font-size: 0.8em !important;
+    }
+}
