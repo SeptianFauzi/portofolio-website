@@ -49,9 +49,9 @@ const SkillsSection = () => {
                         <h2 className="text-white">Web Development</h2>
                         <p className="text-white">Build a website with the latest technology with my expertise. Experience developing a website with a professional.
                             Some technology stacks that I am an expert on</p>
-                        <p className="text-white">Front-End : HTML, CSS, JavaScript, SASS, SCSS, ReactJS, Redux, Bootstrap, MUI, Axios, Ant Design, React Query, jQuery</p>
+                        <p className="text-white">Front-End : HTML, CSS, JavaScript, Typescript, SASS, SCSS, ReactJS, NextJS, Redux, Bootstrap, MUI, Axios, Ant Design, React Query, jQuery, Styled Component</p>
                         <p className="text-white">Back-End : PHP, Node JS, Laravel, Lumen, REST API</p>
-                        <p className="text-white">Others : Nginx, MySQL, Git</p>
+                        <p className="text-white">Others : Nginx, MySQL, Git, Jest, React Testing Library</p>
                         <div className="text-center">
                             <hr className="text-white" />
                             <h6 className="text-white">Tech Stack</h6>
@@ -61,7 +61,7 @@ const SkillsSection = () => {
                                 <Badge bg="secondary" className="mx-1">HTML</Badge>
                                 <Badge bg="secondary" className="mx-1">CSS</Badge>
                                 <Badge bg="secondary" className="mx-1">JavaScript</Badge>
-                                {/* <Badge bg="secondary" className="mx-1">TypeScript</Badge> */}
+                                <Badge bg="secondary" className="mx-1">TypeScript</Badge>
                                 <Badge bg="secondary" className="mx-1">Sass</Badge>
                                 <Badge bg="secondary" className="mx-1">Scss</Badge>
                                 <Badge bg="secondary" className="mx-1">Node JS</Badge>
@@ -82,7 +82,10 @@ const SkillsSection = () => {
                                 <Badge bg="secondary" className="mx-1">Laravel</Badge>
                                 <Badge bg="secondary" className="mx-1">Lumen</Badge>
                                 <Badge bg="secondary" className="mx-1">NginX</Badge>
-                                {/* <Badge bg="secondary" className="mx-1">React Query</Badge> */}
+                                <Badge bg="secondary" className="mx-1">React Query</Badge>
+                                <Badge bg="secondary" className="mx-1">Jest</Badge>
+                                <Badge bg="secondary" className="mx-1">React Testing Library</Badge>
+                                <Badge bg="secondary" className="mx-1">Styled Component</Badge>
                             </Col>
                         </Row>
                     </div>

@@ -43,6 +43,8 @@ import tempoLogin from '../assets/images/tempo-login.png'
 import tempoRichMenu from '../assets/images/tempo-richmenu.png'
 import tempoCreateRichMenu from '../assets/images/tempo-create-richmenu.png'
 import tempoUser from '../assets/images/tempo-user.png'
+
+import dbsLogo from '../assets/images/dbs-logo.png'
 const PortofolioSection = () => {
     const [show, setShow] = useState(false)
     const [project, setProject] = useState(false)
@@ -113,8 +115,7 @@ const PortofolioSection = () => {
                                     <Card.Body className="pb-3 mb-0 bg-secondary text-white">
                                         <Card.Title><h4>DKT Dashboard</h4></Card.Title>
                                         <Card.Text>
-                                            A dashboard that
-                                            displaying customer order information from the DKT Indonesia company
+                                            A dashboard that displaying customer order information from the DKT Indonesia company
                                         </Card.Text>
                                         <hr className="text-primary" />
                                         <div className="d-flex justify-content-center">
@@ -160,6 +161,25 @@ const PortofolioSection = () => {
                                         <div className="d-flex justify-content-center">
                                             <Button className="mx-1 text-white" variant="primary" onClick={() => handleOpen('tempo')}>Detail</Button>
                                             <Button className="mx-1 text-white" variant="primary"><a rel="noreferrer" target="_blank" href="https://tara.tempo.co">Visit</a></Button>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col xs={11} sm={6} md={6} lg={4} xl={4} xxl={4} className="d-flex justify-content-center mx-auto mx-sm-0">
+                                <Card className="text-center shadow-lg border-primary rounded">
+                                    <Image loader={myLoader}
+                                        className="d-block w-100"
+                                        src={dbsLogo}
+                                        alt="First slide"
+                                    />
+                                    <Card.Body className="pb-3 mb-0 bg-secondary text-white">
+                                        <Card.Title><h4>DBS Internet Banking</h4></Card.Title>
+                                        <Card.Text>
+                                            DBS Internet Banking Website Application
+                                        </Card.Text>
+                                        <hr className="text-primary" />
+                                        <div className="d-flex justify-content-center">
+                                            {/* <Button className="mx-1 text-white" variant="primary" onClick={() => handleOpen('dbs')}>Detail</Button> */}
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -468,6 +488,50 @@ const PortofolioSection = () => {
                                     <Row>
                                         <h6 className="text-secondary">Project description</h6>
                                         <p>E-DKM dashboard is a data management system for Sirnasari Bogor residents that is used in the EDKM Android mobile application. This website stores data on qurban recipients, citizen data, zakat recipients and other services owned by the Al Irfan organization. Some of the features of this dashboard are create, read, update, and delete citizen data, qurban recipients, zakat (donations), and download data in csv format. I am working on this project as Full Stack Developer using Laravel, React JS, and PostgreSQL</p>
+                                        <h6 className="text-secondary">Tech Stack</h6>
+                                        <Col>
+                                            <Badge bg="secondary" className="mx-1">HTML</Badge>
+                                            <Badge bg="secondary" className="mx-1">CSS</Badge>
+                                            <Badge bg="secondary" className="mx-1">JavaScript</Badge>
+                                            <Badge bg="secondary" className="mx-1">PHP</Badge>
+                                            <Badge bg="secondary" className="mx-1">Sass</Badge>
+                                            <Badge bg="secondary" className="mx-1">Scss</Badge>
+                                            <Badge bg="secondary" className="mx-1">Webpack</Badge>
+                                            <Badge bg="secondary" className="mx-1">Git</Badge>
+                                            <Badge bg="secondary" className="mx-1">ReactJS</Badge>
+                                            <Badge bg="secondary" className="mx-1">Redux Toolkit</Badge>
+                                            <Badge bg="secondary" className="mx-1">Axios</Badge>
+                                            <Badge bg="secondary" className="mx-1">REST API</Badge>
+                                            <Badge bg="secondary" className="mx-1">MUI</Badge>
+                                            <Badge bg="secondary" className="mx-1">Laravel</Badge>
+                                            <Badge bg="secondary" className="mx-1">PostgreSQL</Badge>
+                                            <Badge bg="secondary" className="mx-1">Heroku</Badge>
+                                        </Col>
+                                    </Row>
+                                </Modal.Footer>
+                            </div>
+                        )}
+                        {project === 'dbs' && (
+                            <div id="dbs">
+                                <Modal.Header closeButton>
+                                    <Modal.Title id="contained-modal-title-vcenter" className="text-secondary">Tara Account Management</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>
+                                    <Carousel variant="dark">
+                                        <Carousel.Item>
+                                            <Image
+                                                loader={myLoader}
+                                                className="d-block w-100"
+                                                src={dbsLogo}
+                                                alt="Slide 1"
+                                            />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                </Modal.Body>
+                                <Modal.Footer className="overflow-auto">
+                                    <Row>
+                                        <h6 className="text-secondary">Project description</h6>
+                                        <p>Tara Account Management is a dashboard for data management on the Tara chatbot owned by Tempo.co. This dashboard has several features, one of which is creating a Line richmenu and doing pushes based on the type of subscription of a tempo.co customer and a certain time, in addition to displaying news content created by users which will be selected by a Tempo.co agent. This website is made using PHP, Laravel, MySQL and jQuery</p>
                                         <h6 className="text-secondary">Tech Stack</h6>
                                         <Col>
                                             <Badge bg="secondary" className="mx-1">HTML</Badge>
