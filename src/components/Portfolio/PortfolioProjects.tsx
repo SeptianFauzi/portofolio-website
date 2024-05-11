@@ -194,11 +194,11 @@ function PortfolioProject() {
     setModalIsOpen(false);
   };
   return (
-    <main className="flex-grow h-fit rounded-2xl bg-white">
+    <main className="flex-grow h-fit rounded-2xl bg-white dark:bg-gray-700">
       <div className="md:p-12 p-7 flex flex-col gap-4">
         <div>
           <div className="flex items-center mb-4 gap-4">
-            <h2 className="text-2xl md:text-4xl font-bold text-black ">
+            <h2 className="text-2xl md:text-4xl font-bold text-black dark:text-white">
               Project
             </h2>
             <div className="w-1/4 h-2 border-b-4 border-primary"></div>
@@ -209,8 +209,8 @@ function PortfolioProject() {
             <li
               className={`${
                 category === "" &&
-                "text-primary transition-colors duration-200 ease-in"
-              } `}
+                "dark:text-primary text-primary transition-colors duration-200 ease-in "
+              } dark:text-slate-400`}
               onClick={() => setCategory("")}
             >
               All
@@ -218,8 +218,8 @@ function PortfolioProject() {
             <li
               className={`${
                 category === ProjectCategory.Web &&
-                "text-primary transition-colors duration-200 ease-in"
-              } `}
+                "dark:text-primary text-primary transition-colors duration-200 ease-in"
+              } dark:text-slate-400`}
               onClick={() => setCategory(ProjectCategory.Web)}
             >
               Web
@@ -227,8 +227,8 @@ function PortfolioProject() {
             <li
               className={`${
                 category === ProjectCategory.MobileApp &&
-                "text-primary transition-colors duration-200 ease-in"
-              } `}
+                "dark:text-primary text-primary transition-colors duration-200 ease-in"
+              } dark:text-slate-400`}
               onClick={() => setCategory(ProjectCategory.MobileApp)}
             >
               Mobile App
@@ -236,8 +236,8 @@ function PortfolioProject() {
             <li
               className={`${
                 category === ProjectCategory.CHATBOT &&
-                "text-primary transition-colors duration-200 ease-in"
-              } `}
+                "dark:text-primary text-primary transition-colors duration-200 ease-in"
+              } dark:text-slate-400`}
               onClick={() => setCategory(ProjectCategory.CHATBOT)}
             >
               Chatbot

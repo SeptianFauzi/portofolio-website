@@ -26,11 +26,11 @@ function Modal({ isOpen, onClose, content }: IModal) {
     <div
       className={`${
         isOpen ? `opacity-100 visible` : `invisible opacity-0`
-      } h-screen w-screen bg-gray-700 fixed inset-0 z-20 flex items-center transition-opacity duration-300 ease-in-out`}
+      } h-screen w-screen bg-gray-700 fixed inset-0 z-20 flex items-center transition-opacity duration-300 ease-in-out dark:bg-gray-400`}
     >
       <div className="lg:mx-auto my-auto flex gap-2 mx-4">
         <div
-          className="h-[75vh] max-h-[800px] lg:w-[800px] w-full bg-white rounded-xl shadow-xl lg:p-6 p-4 overflow-auto"
+          className="h-[75vh] max-h-[800px] lg:w-[800px] w-full bg-white rounded-xl shadow-xl lg:p-6 p-4 overflow-auto dark:bg-gray-700"
           ref={modalRef}
         >
           {/* Header */}
@@ -41,7 +41,7 @@ function Modal({ isOpen, onClose, content }: IModal) {
             />
           </div>
           {/* Title */}
-          <p className=" text-2xl text-primary text-center mb-6">
+          <p className=" text-2xl text-primary text-center mb-6 dark:text-white">
             {content.title}
           </p>
           {/* Body */}
@@ -49,30 +49,30 @@ function Modal({ isOpen, onClose, content }: IModal) {
             {/* Client Detail */}
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 self-start">
               <div className="flex flex-col">
-                <div className="flex gap-2 lg:items-center justify-start items-start">
+                <div className="flex gap-2 lg:items-center justify-start items-start dark:text-slate-400">
                   <FaFileAlt />
                   <p className="text-sm lg:text-base">Project Type:</p>
-                  <p className="text-slate-700 text-sm lg:text-base">
+                  <p className="text-slate-700 text-sm lg:text-base dark:text-slate-400">
                     <strong>{content.category}</strong>
                   </p>
                 </div>
               </div>
-              <div className="flex gap-2 items-center justify-start text-sm lg:text-base">
+              <div className="flex gap-2 items-center justify-start text-sm lg:text-base dark:text-slate-400">
                 <FaUser />
-                <p className=" text-slate-700 text-sm lg:text-base">
+                <p className=" text-slate-700 text-sm lg:text-base dark:text-slate-400">
                   Client: <strong>{content.client}</strong>
                 </p>
               </div>
-              <div className="lg:col-span-2 col-span-1 flex gap-2 items-start justify-start">
+              <div className="lg:col-span-2 col-span-1 flex gap-2 items-start justify-start dark:text-slate-400">
                 <FaCode className="text-2xl " />
-                <p className="text-slate-700 text-sm lg:text-base">
+                <p className="text-slate-700 text-sm lg:text-base dark:text-slate-400">
                   Tech Stack:
                   <strong>{` ${content.techStack}`}</strong>
                 </p>
               </div>
             </div>
             {/* Description */}
-            <p>{content.description}</p>
+            <p className="dark:text-slate-400">{content.description}</p>
             {/* Carousel */}
             {content?.videoLink && (
               <div className="flex justify-center">

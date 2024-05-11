@@ -5,12 +5,12 @@ import PortfolioFooter from "./PortfolioFooter";
 
 function PortfolioResume() {
   return (
-    <main className="flex-grow h-fit rounded-2xl bg-white">
+    <main className="flex-grow h-fit rounded-2xl bg-white dark:bg-gray-700">
       <div className="md:p-12 p-7 flex flex-col gap-4">
         {/* About Me */}
         <div>
           <div className="flex items-center mb-4 gap-4">
-            <h2 className="text-2xl md:text-4xl font-bold text-black ">
+            <h2 className="text-2xl md:text-4xl font-bold text-black dark:text-white">
               Resume
             </h2>
             <div className="w-1/4 h-2 border-b-4 border-primary"></div>
@@ -20,25 +20,27 @@ function PortfolioResume() {
         {/* What I do */}
         <div>
           <div className="flex items-center mb-4 gap-4">
-            <h2 className="text-3xl font-semibold text-black ">Experience</h2>
+            <h2 className="text-3xl font-semibold text-black dark:text-white">
+              Experience
+            </h2>
           </div>
           <div className="grid grid-cols-1 gap-4">
             <div className="flex flex-col gap-4 rounded-2xl border-2 border-primary-2-darker shadow-lg">
               <div className="flex flex-col gap-4 p-4">
                 <div>
-                  <p className="text-slate-500 font-medium text-xs">
+                  <p className="text-slate-500 font-medium text-xs dark:text-slate-400">
                     May 2022 - Dec 2023 (1 year 8 months)
                   </p>
                   <div className="mb-3">
                     <h3 className="text-lg text-primary-2-darker font-medium">
                       ReactJS Developer
                     </h3>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 dark:text-slate-400">
                       <FaBuilding />
                       <p>Beyondsoft</p>
                     </div>
                   </div>
-                  <ul className="list-disc pl-5 text-slate-500 text-base gap-2 max-h-15 overflow-auto ">
+                  <ul className="list-disc pl-5 text-slate-500 text-base gap-2 max-h-15 overflow-auto dark:text-slate-400">
                     <li>
                       Assignment as a React developer at DBS bank Singapore and
                       successfully developed DBS Internet banking web
@@ -73,19 +75,19 @@ function PortfolioResume() {
             <div className="flex flex-col gap-4 rounded-2xl border-2 border-primary-3-darker shadow-lg">
               <div className="flex flex-col gap-4 p-4">
                 <div>
-                  <p className="text-slate-500 font-medium text-xs">
+                  <p className="text-slate-500 font-medium text-xs dark:text-slate-400">
                     January 2022 - April 2022 (5 months)
                   </p>
                   <div className="mb-3">
                     <h3 className="text-lg text-primary-3-darker font-medium">
                       Frontend Developer
                     </h3>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 dark:text-slate-400">
                       <FaBuilding />
                       <p>Sprint Asia Technology</p>
                     </div>
                   </div>
-                  <ul className="list-disc pl-5 text-slate-500 text-base gap-2 max-h-15 overflow-auto ">
+                  <ul className="list-disc pl-5 text-slate-500 text-base gap-2 max-h-15 overflow-auto dark:text-slate-400">
                     <li>
                       Successfully Developed Konnek Multichannel Platform with
                       React
@@ -106,19 +108,19 @@ function PortfolioResume() {
             <div className="flex flex-col gap-4 rounded-2xl border-2 border-primary shadow-lg">
               <div className="flex flex-col gap-4 p-4">
                 <div>
-                  <p className="text-slate-500 font-medium text-xs">
+                  <p className="text-slate-500 font-medium text-xs dark:text-slate-400">
                     February 2020 - December 2021 (1 year 11 months)
                   </p>
                   <div className="mb-3">
                     <h3 className="text-lg text-primary font-medium">
                       Fullstack Developer
                     </h3>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 dark:text-slate-400">
                       <FaBuilding />
                       <p>Medlinx Asia Teknologi</p>
                     </div>
                   </div>
-                  <ul className="list-disc pl-5 text-slate-500 text-base gap-2 max-h-15 overflow-auto ">
+                  <ul className="list-disc pl-5 text-slate-500 text-base gap-2 max-h-15 overflow-auto dark:text-slate-400">
                     <li>
                       Successfully Developed Tempo, DKT Indonesia, Siloam
                       Hospital and Medlinx Chatbot with Kata.ai Platform. These
@@ -156,24 +158,26 @@ function PortfolioResume() {
         {/* End What I do */}
         <div>
           <div className="flex items-center mb-4 gap-4">
-            <h2 className="text-3xl font-semibold text-black">Education</h2>
+            <h2 className="text-3xl font-semibold text-black dark:text-white">
+              Education
+            </h2>
           </div>
           <div className="grid grid-cols-1 gap-4">
             <div className="flex flex-col gap-4 rounded-2xl border-2 border-teal-500 shadow-lg">
               <div className="flex flex-col gap-4 p-4">
                 <div>
-                  <p className="text-slate-500 font-medium text-xs">
+                  <p className="text-slate-500 font-medium text-xs dark:text-slate-400">
                     May 2015 - December 2019
                   </p>
                   <div className="mb-3">
                     <h3 className="text-lg text-teal-500 font-medium">
                       Bachelors Of Information Technology
                     </h3>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 dark:text-slate-400">
                       <FaGraduationCap />
                       <p>Ibn Khaldun Bogor University</p>
                     </div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 dark:text-slate-400">
                       <p>GPA: 3.82</p>
                     </div>
                   </div>

@@ -17,7 +17,7 @@ function PortfolioSidebarNavigation() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   return (
-    <aside className="min-w-[120px] rounded-2xl bg-white h-fit sticky top-[10px] hidden lg:block">
+    <aside className="min-w-[120px] rounded-2xl bg-white dark:bg-gray-700 h-fit sticky top-[10px] hidden lg:block">
       {isLoading && (
         <div className=" transition-opacity duration-300 ease-out opacity-0 invisible group-hover:opacity-100 group-hover:visible z-50">
           <Loading />
@@ -29,8 +29,8 @@ function PortfolioSidebarNavigation() {
             <Link
               className={`${
                 pathname === "/"
-                  ? "bg-primary first:text-white"
-                  : "bg-white first:text-primary"
+                  ? "bg-primary first:text-white dark:bg-gray-800 dark:text-slate-400"
+                  : "bg-white first:text-primary dark:first:text-gray-700"
               } size-full  rounded-xl flex flex-col items-center justify-center shadow-lg p-4 text-sm`}
               rel="noreferrer"
               href={"/"}
@@ -43,8 +43,8 @@ function PortfolioSidebarNavigation() {
             <Link
               className={`${
                 pathname === "/resume"
-                  ? "bg-primary first:text-white"
-                  : "bg-white first:text-primary"
+                  ? "bg-primary  first:text-white dark:bg-gray-800 dark:text-slate-400"
+                  : "bg-white first:text-primary dark:first:text-gray-700"
               } size-full rounded-xl flex flex-col items-center justify-center shadow-lg p-4 text-sm`}
               rel="noreferrer"
               href="/resume"
@@ -57,8 +57,8 @@ function PortfolioSidebarNavigation() {
             <Link
               className={`${
                 pathname === "/project"
-                  ? "bg-primary first:text-white"
-                  : "bg-white first:text-primary"
+                  ? "bg-primary first:text-white dark:bg-gray-800 dark:text-slate-400"
+                  : "bg-white first:text-primary dark:first:text-gray-700"
               } size-full rounded-xl flex flex-col items-center justify-center shadow-lg p-4 text-sm`}
               rel="noreferrer"
               href="/project"

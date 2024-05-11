@@ -11,18 +11,17 @@ import {
   FaTimes,
   FaCompass,
 } from "react-icons/fa";
+import DarkModeButton from "./DarkModeButton";
 function PortfolioNavigation() {
   const pathname = usePathname();
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState<boolean>(false);
   return (
     <div className="grid grid-cols-1 pt-6 lg:mb-28 mb-4 px-4 lg:px-0">
       <div className="justify-self-end flex justify-center gap-3 p-4 2xl:p-0">
-        <button className="size-12 bg-slate-50 rounded-full p-4 shadow-xl">
-          <FaMoon className="text-black" />
-        </button>
+        <DarkModeButton />
         {/* Mobile Menu */}
         <button
-          className="lg:hidden size-12 rounded-full p-4 shadow-xl bg-primary-2-darker"
+          className="lg:hidden size-12 rounded-full p-4 shadow-xl bg-primary-2-darker dark:bg-gray-700"
           onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
         >
           {isOpenMobileMenu ? (
@@ -37,14 +36,16 @@ function PortfolioNavigation() {
         <div
           className={`lg:hidden absolute w-full bg-white rounded-xl z-50 shadow-lg transition-all duration-300 ${
             isOpenMobileMenu ? "opacity-100" : "opacity-0"
-          }`}
+          } dark:bg-gray-700`}
           id="mobile-menu"
         >
           <ul className="flex flex-col gap-4 py-6 px-10">
             <li>
               <Link
                 className={`${
-                  pathname === "/" ? "text-primary-2-darker" : "text-black"
+                  pathname === "/"
+                    ? "text-primary-2-darker dark:text-slate-200"
+                    : "text-black dark:text-slate-400"
                 } text-black text-base font-medium flex flex-row w-full gap-2 items-center`}
                 href="/"
                 scroll={false}
@@ -62,8 +63,8 @@ function PortfolioNavigation() {
               <Link
                 className={`${
                   pathname === "/resume"
-                    ? "text-primary-2-darker"
-                    : "text-black"
+                    ? "text-primary-2-darker dark:text-slate-200"
+                    : "text-black dark:text-slate-400"
                 } text-base font-medium flex flex-row w-full gap-2  items-center`}
                 href="/resume"
                 scroll={false}
@@ -82,8 +83,8 @@ function PortfolioNavigation() {
                 scroll={false}
                 className={`${
                   pathname === "/project"
-                    ? "text-primary-2-darker"
-                    : "text-black"
+                    ? "text-primary-2-darker dark:text-slate-200"
+                    : "text-black dark:text-slate-400"
                 } text-base font-medium flex flex-row w-full gap-2  items-center`}
                 href="/project"
                 onClick={() => {

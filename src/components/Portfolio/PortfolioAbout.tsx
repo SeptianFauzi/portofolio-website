@@ -148,17 +148,17 @@ function PortfolioAbout() {
     },
   ];
   return (
-    <main className="flex-grow h-fit rounded-2xl bg-white">
+    <main className="flex-grow h-fit rounded-2xl bg-white dark:bg-gray-700">
       <div className="md:p-12 p-7 flex flex-col gap-4">
         {/* About Me */}
         <div>
           <div className="flex items-center mb-4 gap-4">
-            <h2 className="text-2xl md:text-4xl font-bold text-black ">
+            <h2 className="text-2xl md:text-4xl font-bold text-black dark:text-white ">
               About Me
             </h2>
             <div className="w-1/4 h-2 border-b-4 border-primary"></div>
           </div>
-          <p className="text-base md:text-lg mb-4 text-slate-500">
+          <p className="text-base md:text-lg mb-4 text-slate-500 dark:text-slate-400">
             Greetings, I'm Septian Fauzi. I'm deeply curious about technology
             development, particularly when it comes to websites. I have over 3
             years of experience in website development. Some of the technologies
@@ -166,13 +166,13 @@ function PortfolioAbout() {
             Jest, React Testing Library, Styled Component, Bootstrap, PHP, REST
             API Axios, Redux, Git, and many others.
           </p>
-          <p className="text-base md:text-lg text-slate-500 mb-4">
+          <p className="text-base md:text-lg text-slate-500 mb-4 dark:text-slate-400">
             I am very happy if I can collaborate with everyone to develop and
             build projects that are useful for many people. If you're seeking a
             partner to help build a website, please don't hesitate to reach out
             to me to build your awasome project.
           </p>
-          <p className="text-md md:text-xl text-slate-500 font-semibold">
+          <p className="text-md md:text-xl text-slate-500 font-semibold dark:text-slate-400">
             "Build Your Idea With My Code"
           </p>
         </div>
@@ -180,7 +180,9 @@ function PortfolioAbout() {
         {/* What I do */}
         <div>
           <div className="flex items-center mb-4 gap-4">
-            <h2 className="text-3xl font-semibold text-black ">What I Do!</h2>
+            <h2 className="text-3xl font-semibold text-black dark:text-white">
+              What I Do!
+            </h2>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
             <div className="flex flex-col gap-4 rounded-2xl border-2 border-primary-2-darker shadow-lg">
@@ -190,7 +192,7 @@ function PortfolioAbout() {
                   <h3 className="text-lg text-primary-2-darker font-medium mb-2">
                     Web Development
                   </h3>
-                  <p className="text-slate-500">
+                  <p className="text-slate-500 dark:text-slate-400">
                     I'm skilled at building modern websites using the latest
                     technology. With my experience, I'll create a professional
                     website that suits your needs perfectly.
@@ -205,7 +207,7 @@ function PortfolioAbout() {
                   <h3 className="text-lg text-primary-3-darker font-medium mb-2">
                     Mobile Development
                   </h3>
-                  <p className="text-slate-500">
+                  <p className="text-slate-500 dark:text-slate-400">
                     Building mobile apps for Android or iOS is simple with React
                     Native. Tell me your app idea, and I'll use the latest
                     technology in React Native to bring it to life.
@@ -218,7 +220,9 @@ function PortfolioAbout() {
         {/* End What I do */}
         <div>
           <div className="flex items-center mb-4 gap-4">
-            <h2 className="text-3xl font-semibold text-black ">Tech Stack</h2>
+            <h2 className="text-3xl font-semibold text-black dark:text-white">
+              Tech Stack
+            </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4  overflow-y-auto gap-4">
             {techStackList.map((item, index) => (
@@ -233,7 +237,7 @@ function PortfolioAbout() {
                   width={80}
                   height={80}
                 />
-                <p>{item.name}</p>
+                <p className="dark:text-slate-400">{item.name}</p>
               </div>
             ))}
           </div>
