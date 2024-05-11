@@ -1,17 +1,17 @@
-
-/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
-/* @import 'custom.scss'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #330A59;
+  /* background-color: #330a59; */
 }
 .custom-toggler.navbar-toggler {
-  border-color: rgb(255,102,203);
-} 
+  border-color: rgb(255, 102, 203);
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -20,12 +20,12 @@ a {
 * {
   box-sizing: border-box;
 }
-
+/* 
 .active-scroll > .active {
-  border-bottom: 4px solid #C7FCFA;
+  border-bottom: 4px solid #c7fcfa;
   padding-bottom: 1rem;
   font-size: 20px;
 }
-.reveal{
+.reveal {
   text-decoration: none;
-}
+} */
