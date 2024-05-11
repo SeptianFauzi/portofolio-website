@@ -3,13 +3,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import {
-  FaMoon,
   FaBars,
   FaAddressCard,
   FaFileAlt,
   FaBriefcase,
   FaTimes,
-  FaCompass,
 } from "react-icons/fa";
 import DarkModeButton from "./DarkModeButton";
 function PortfolioNavigation() {

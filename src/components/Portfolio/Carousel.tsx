@@ -1,8 +1,8 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React, { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-function Carousel({ images }: { images: StaticImageData[] }) {
+function Carousel({ images }: { images: string[] }) {
   const imageContainerRef = useRef<HTMLDivElement>(null);
   const handleScrollRight = () => {
     if (imageContainerRef.current) {

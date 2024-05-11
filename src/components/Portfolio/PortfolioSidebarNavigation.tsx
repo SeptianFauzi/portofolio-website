@@ -2,14 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-import {
-  FaAddressCard,
-  FaBriefcase,
-  FaBuilding,
-  FaCompass,
-  FaFile,
-  FaWindowMaximize,
-} from "react-icons/fa";
+import { FaAddressCard, FaBriefcase, FaFile } from "react-icons/fa";
 import Loading from "./Loading";
 
 function PortfolioSidebarNavigation() {

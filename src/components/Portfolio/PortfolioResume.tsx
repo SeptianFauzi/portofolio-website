@@ -1,6 +1,5 @@
-import Image from "next/image";
 import React from "react";
-import { FaBuilding, FaCalendarAlt, FaGraduationCap } from "react-icons/fa";
+import { FaBuilding, FaGraduationCap } from "react-icons/fa";
 import PortfolioFooter from "./PortfolioFooter";
 
 function PortfolioResume() {
