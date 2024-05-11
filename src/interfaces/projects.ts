@@ -10,8 +10,8 @@ export interface IProjectList {
   id: number;
   title: string;
   category: ProjectCategory;
-  image: StaticImageData;
-  imageList: StaticImageData[];
+  image: string;
+  imageList: string[];
   videoLink?: string;
   techStack: string;
   client: string;

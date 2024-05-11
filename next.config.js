@@ -6,6 +6,11 @@ module.exports = {
         hostname: "via.placeholder.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "assets.septianfauzi.com",
+        port: "",
+      },
     ],
   },
 };

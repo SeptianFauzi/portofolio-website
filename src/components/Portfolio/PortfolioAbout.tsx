@@ -2,149 +2,121 @@ import Image from "next/image";
 import React from "react";
 import { FaCode, FaMobileAlt } from "react-icons/fa";
 
-import javascriptLogo from "../../../assets/images/javascript-logo.png";
-import typescriptLogo from "../../../assets/images/typescript-logo.png";
-import htmlLogo from "../../../assets/images/html-logo.png";
-import cssLogo from "../../../assets/images/css-logo.png";
-import reactLogo from "../../../assets/images/react-logo.png";
-import bootstrapLogo from "../../../assets/images/bootstrap-logo.png";
-import babelLogo from "../../../assets/images/babel-logo.png";
-import antDesignLogo from "../../../assets/images/ant-design-logo.png";
-import axiosLogo from "../../../assets/images/axios-logo.png";
-import eslintLogo from "../../../assets/images/eslint-logo.png";
-import styledComponentsLogo from "../../../assets/images/styled-components-logo.png";
-import tailwindLogo from "../../../assets/images/tailwind-logo.png";
-import nextjsLogo from "../../../assets/images/nextjs-logo.png";
-import nodejsLogo from "../../../assets/images/nodejs-logo.png";
-import gitLogo from "../../../assets/images/git-logo.png";
-import jestLogo from "../../../assets/images/jest-logo.png";
-import jqueryLogo from "../../../assets/images/jquery-logo.png";
-import laravelLogo from "../../../assets/images/laravel-logo.png";
-import materialUILogo from "../../../assets/images/material-ui-logo.png";
-import mysqlLogo from "../../../assets/images/mysql-logo.png";
-import phpLogo from "../../../assets/images/php-logo.png";
-import reacthookformLogo from "../../../assets/images/react-hook-form-logo.png";
-import reduxLogo from "../../../assets/images/redux-logo.png";
-import reactNativeLogo from "../../../assets/images/react-native-logo.png";
-import reactTestingLibraryLogo from "../../../assets/images/react-testing-library-logo.png";
-import restfulAPILogo from "../../../assets/images/restful-api-logo.png";
-import sassLogo from "../../../assets/images/sass-logo.png";
-import webpackLogo from "../../../assets/images/webpack-logo.png";
 import PortfolioFooter from "./PortfolioFooter";
 
 function PortfolioAbout() {
   const techStackList = [
     {
       name: "Javascript",
-      logo: javascriptLogo,
+      logo: "https://assets.septianfauzi.com/images/javascript-logo.png",
     },
     {
       name: "Typescript",
-      logo: typescriptLogo,
+      logo: "https://assets.septianfauzi.com/images/typescript-logo.png",
     },
     {
       name: "HTML",
-      logo: htmlLogo,
+      logo: "https://assets.septianfauzi.com/images/html-logo.png",
     },
     {
       name: "CSS",
-      logo: cssLogo,
+      logo: "https://assets.septianfauzi.com/images/css-logo.png",
     },
     {
       name: "Bootstrap",
-      logo: bootstrapLogo,
+      logo: "https://assets.septianfauzi.com/images/bootstrap-logo.png",
     },
     {
       name: "Ant Design",
-      logo: antDesignLogo,
+      logo: "https://assets.septianfauzi.com/images/ant-design-logo.png",
     },
     {
       name: "Tailwind CSS",
-      logo: tailwindLogo,
+      logo: "https://assets.septianfauzi.com/images/tailwind-logo.png",
     },
     {
       name: "Material UI",
-      logo: materialUILogo,
+      logo: "https://assets.septianfauzi.com/images/material-ui-logo.png",
     },
     {
       name: "Styled Components",
-      logo: styledComponentsLogo,
+      logo: "https://assets.septianfauzi.com/images/styled-components-logo.png",
     },
     {
       name: "React Testing Library",
-      logo: reactTestingLibraryLogo,
+      logo: "https://assets.septianfauzi.com/images/react-testing-library-logo.png",
     },
     {
       name: "React JS",
-      logo: reactLogo,
+      logo: "https://assets.septianfauzi.com/images/react-logo.png",
     },
     {
       name: "Redux",
-      logo: reduxLogo,
+      logo: "https://assets.septianfauzi.com/images/redux-logo.png",
     },
     {
       name: "SASS",
-      logo: sassLogo,
+      logo: "https://assets.septianfauzi.com/images/sass-logo.png",
     },
     {
       name: "Next.js",
-      logo: nextjsLogo,
+      logo: "https://assets.septianfauzi.com/images/nextjs-logo.png",
     },
     {
       name: "Babel",
-      logo: babelLogo,
+      logo: "https://assets.septianfauzi.com/images/babel-logo.png",
     },
     {
       name: "Axios",
-      logo: axiosLogo,
+      logo: "https://assets.septianfauzi.com/images/axios-logo.png",
     },
     {
       name: "Eslint",
-      logo: eslintLogo,
+      logo: "https://assets.septianfauzi.com/images/eslint-logo.png",
     },
     {
       name: "NodeJS",
-      logo: nodejsLogo,
+      logo: "https://assets.septianfauzi.com/images/nodejs-logo.png",
     },
     {
       name: "Git",
-      logo: gitLogo,
+      logo: "https://assets.septianfauzi.com/images/git-logo.png",
     },
     {
       name: "Jest",
-      logo: jestLogo,
+      logo: "https://assets.septianfauzi.com/images/jest-logo.png",
     },
     {
       name: "JQuery",
-      logo: jqueryLogo,
+      logo: "https://assets.septianfauzi.com/images/jquery-logo.png",
     },
     {
       name: "PHP",
-      logo: phpLogo,
+      logo: "https://assets.septianfauzi.com/images/php-logo.png",
     },
     {
       name: "Laravel",
-      logo: laravelLogo,
+      logo: "https://assets.septianfauzi.com/images/laravel-logo.png",
     },
     {
       name: "MySQL",
-      logo: mysqlLogo,
+      logo: "https://assets.septianfauzi.com/images/mysql-logo.png",
     },
     {
       name: "React Native",
-      logo: reactNativeLogo,
+      logo: "https://assets.septianfauzi.com/images/react-native-logo.png",
     },
     {
       name: "React Hook Form",
-      logo: reacthookformLogo,
+      logo: "https://assets.septianfauzi.com/images/react-hook-form-logo.png",
     },
     {
       name: "RESTful API",
-      logo: restfulAPILogo,
+      logo: "https://assets.septianfauzi.com/images/restful-api-logo.png",
     },
     {
       name: "Webpack",
-      logo: webpackLogo,
+      logo: "https://assets.septianfauzi.com/images/webpack-logo.png",
     },
   ];
   return (
@@ -163,8 +135,8 @@ function PortfolioAbout() {
             development, particularly when it comes to websites. I have over 3
             years of experience in website development. Some of the technologies
             I frequently use include HTML, CSS, Javascript, Typescript, ReactJS,
-            Jest, React Testing Library, Styled Component, Bootstrap, PHP, REST
-            API Axios, Redux, Git, and many others.
+            Next.JS, Jest, React Testing Library, Styled Component, Bootstrap,
+            RESTful API Axios, Redux, Git, and many others.
           </p>
           <p className="text-base md:text-lg text-slate-500 mb-4 dark:text-slate-400">
             I am very happy if I can collaborate with everyone to develop and
@@ -231,7 +203,7 @@ function PortfolioAbout() {
                 key={index}
               >
                 <Image
-                  src={item.logo.src}
+                  src={item.logo}
                   alt="html"
                   className="rounded-lg my-auto pb-1"
                   width={80}

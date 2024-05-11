@@ -1,11 +1,10 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 function Carousel({ images }: { images: StaticImageData[] }) {
   const imageContainerRef = useRef<HTMLDivElement>(null);
   const handleScrollRight = () => {
-    console.log("disini");
     if (imageContainerRef.current) {
       imageContainerRef.current.scrollBy({
         left: 300,
@@ -24,9 +23,11 @@ function Carousel({ images }: { images: StaticImageData[] }) {
 
   return (
     <div className="flex items-center justify-center gap-4 overflow-scroll">
+      {/* Image Container */}
       <div className="relative overflow-x-scroll w-full">
         <button
-          className="absolute left-2 top-1/2 rounded-full border border-slate-600 size-8 flex justify-center items-center"
+          className="absolute
+          left-2 top-1/2 rounded-full border border-slate-600 size-8 flex justify-center items-center"
           onClick={handleScrollLeft}
         >
           <FaChevronLeft />
@@ -41,7 +42,7 @@ function Carousel({ images }: { images: StaticImageData[] }) {
             images.map((image, index) => (
               <Image
                 id="image-1"
-                src={image.src}
+                src={image}
                 className="h-96 w-full rounded-md border border-slate-200 snap-center object-contain"
                 alt="Image 1"
                 width={3000}

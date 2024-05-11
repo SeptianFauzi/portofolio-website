@@ -1,45 +1,7 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React, { useState } from "react";
-
-import dktLogo from "../../../assets/images/dkt-logo.png";
-import dktAsm from "../../../assets/images/dkt-asm.png";
-import dktLogin from "../../../assets/images/dkt-login.png";
-import dktMasterData from "../../../assets/images/dkt-master-data.png";
-import dktUploadData from "../../../assets/images/dkt-upload-data.png";
-import dktChatbot1 from "../../../assets/images/dkt-chatbot-1.jpg";
-import dktChatbot2 from "../../../assets/images/dkt-chatbot-2.jpg";
-import dktChatbot3 from "../../../assets/images/dkt-chatbot-3.jpg";
-
-import konnekLogo from "../../../assets/images/konnek-logo.png";
-import tempoLogo from "../../../assets/images/tempo-logo.png";
-import tempoLogin from "../../../assets/images/tempo-login.png";
-import tempoRichMenu from "../../../assets/images/tempo-richmenu.png";
-import tempoCreateRichMenu from "../../../assets/images/tempo-create-richmenu.png";
-import tempoUser from "../../../assets/images/tempo-user.png";
-
-import konnekLGeneralData from "../../../assets/images/konnek-general-data.png";
-import konnekChangePassword from "../../../assets/images/konnek-change-password.png";
-import konnekModalLogout from "../../../assets/images/konnek-modal-logout.png";
-import konnekNewTopic from "../../../assets/images/konnek-new-topic.png";
-import konnekOpen from "../../../assets/images/konnek-open.png";
-import konnekLogin from "../../../assets/images/konnek-login.png";
 import PortfolioFooter from "./PortfolioFooter";
-import dbsLogo from "../../../assets/images/dbs-logo.png";
-
-import edkmLogo2 from "../../../assets/images/edkm-logo2.png";
-import edkmDetailPeserta from "../../../assets/images/edkm-detail-peserta.png";
-import edkmLogin from "../../../assets/images/edkm-login.png";
-import edkmPesertaQurban from "../../../assets/images/edkm-peserta-qurban.png";
-import edkmTambahPeserta from "../../../assets/images/edkm-tambah-peserta.png";
-
-import edkmMobile1 from "../../../assets/images/edkm-mobile-1.png";
-import edkmMobile2 from "../../../assets/images/edkm-mobile-2.png";
-import edkmMobile3 from "../../../assets/images/edkm-mobile-3.png";
-
-import medlinxLogo from "../../../assets/images/medlinx-logo.png";
-
-import siloamLogo from "../../../assets/images/siloam-logo.png";
 import { FaGlobe, FaMobile, FaRobot } from "react-icons/fa";
 import Modal from "./Modal";
 import { IModalContent } from "../../interfaces/modal";
@@ -52,8 +14,13 @@ function PortfolioProject() {
       id: 1,
       title: "DKT Indonesia Order Dashboard",
       category: ProjectCategory.Web,
-      image: dktLogo,
-      imageList: [dktLogin, dktMasterData, dktAsm, dktUploadData],
+      image: "https://assets.septianfauzi.com/images/dkt-logo.png",
+      imageList: [
+        "https://assets.septianfauzi.com/images/dkt-login.png",
+        "https://assets.septianfauzi.com/images/dkt-master-data.png",
+        "https://assets.septianfauzi.com/images/dkt-upload-data.png",
+        "https://assets.septianfauzi.com/images/dkt-asm.png",
+      ],
       techStack:
         "HTML, CSS, JavaScript, Sass, Scss, Node JS, Webpack, Git, ReactJS, Redux, Axios, REST API, React Bootstrap, MySQL, NginX",
       client: "DKT Indonesia",
@@ -64,14 +31,14 @@ function PortfolioProject() {
       id: 2,
       title: "Konnek MultiChannel Platform",
       category: ProjectCategory.Web,
-      image: konnekLogo,
+      image: "https://assets.septianfauzi.com/images/konnek-logo.png",
       imageList: [
-        konnekLGeneralData,
-        konnekChangePassword,
-        konnekModalLogout,
-        konnekNewTopic,
-        konnekOpen,
-        konnekLogin,
+        "https://assets.septianfauzi.com/images/konnek-login.png",
+        "https://assets.septianfauzi.com/images/konnek-general-data.png",
+        "https://assets.septianfauzi.com/images/konnek-change-password.png",
+        "https://assets.septianfauzi.com/images/konnek-modal-logout.png",
+        "https://assets.septianfauzi.com/images/konnek-new-topic.png",
+        "https://assets.septianfauzi.com/images/konnek-open.png",
       ],
       techStack:
         "HTML, CSS, JavaScript, Sass, Scss, Node JS, Webpack, Git, ReactJS, Redux, Axios, REST API, React Bootstrap, Ant Design, NginX",
@@ -83,8 +50,13 @@ function PortfolioProject() {
       id: 3,
       title: "Tempo.co Tara Account Management ",
       category: ProjectCategory.Web,
-      image: tempoLogo,
-      imageList: [tempoLogin, tempoRichMenu, tempoCreateRichMenu, tempoUser],
+      image: "https://assets.septianfauzi.com/images/tempo-logo.png",
+      imageList: [
+        "https://assets.septianfauzi.com/images/tempo-login.png",
+        "https://assets.septianfauzi.com/images/tempo-richmenu.png",
+        "https://assets.septianfauzi.com/images/tempo-create-richmenu.png",
+        "https://assets.septianfauzi.com/images/tempo-user.png",
+      ],
       techStack:
         "HTML, CSS, JavaScript, JQuery, PHP, Sass, Scss, Webpack, Git, Axios, REST API, Bootstrap, Laravel, MySQL",
       client: "Tempo.co",
@@ -95,12 +67,12 @@ function PortfolioProject() {
       id: 4,
       title: "E-DKM Al-Irfan Dashboard",
       category: ProjectCategory.Web,
-      image: edkmLogo2,
+      image: "https://assets.septianfauzi.com/images/edkm-logo2.png",
       imageList: [
-        edkmLogin,
-        edkmDetailPeserta,
-        edkmPesertaQurban,
-        edkmTambahPeserta,
+        "https://assets.septianfauzi.com/images/edkm-login.png",
+        "https://assets.septianfauzi.com/images/edkm-detail-peserta.png",
+        "https://assets.septianfauzi.com/images/edkm-peserta-qurban.png",
+        "https://assets.septianfauzi.com/images/edkm-tambah-peserta.png",
       ],
       techStack:
         "HTML, CSS, JavaScript, PHP, Sass, Scss, Webpack, Git, ReactJS, Redux Toolkit, Axios, REST API, MUI, Laravel, PostgreSQL",
@@ -112,7 +84,7 @@ function PortfolioProject() {
       id: 5,
       title: "DBS Internet Banking Application",
       category: ProjectCategory.Web,
-      image: dbsLogo,
+      image: "https://assets.septianfauzi.com/images/dbs-logo.png",
       imageList: [],
       techStack:
         "HTML, CSS, Typescript, Styled Component, React Testing Library, ReactJS, Redux-Saga, Axios, Eslint, React Hook Form, RESTful API, JEST",
@@ -124,8 +96,12 @@ function PortfolioProject() {
       id: 6,
       title: "E-DKM Android Mobile Application",
       category: ProjectCategory.MobileApp,
-      image: edkmLogo2,
-      imageList: [edkmMobile1, edkmMobile2, edkmMobile3],
+      image: "https://assets.septianfauzi.com/images/edkm-logo2.png",
+      imageList: [
+        "https://assets.septianfauzi.com/images/edkm-mobile-1.png",
+        "https://assets.septianfauzi.com/images/edkm-mobile-2.png",
+        "https://assets.septianfauzi.com/images/edkm-mobile-3.png",
+      ],
       techStack: "React Native, Android, Javascript, Axios, REST API",
       client: "DKM Al-Irfan",
       description:
@@ -135,7 +111,7 @@ function PortfolioProject() {
       id: 7,
       title: "Silvia Siloam Hospital Chatbot",
       category: ProjectCategory.CHATBOT,
-      image: siloamLogo,
+      image: "https://assets.septianfauzi.com/images/siloam-logo.png",
       imageList: [],
       videoLink: "/silvia-demo.mp4",
       techStack: "Kata.ai Platform, YML, Natural Language, Web Widget",
@@ -147,7 +123,7 @@ function PortfolioProject() {
       id: 8,
       title: "Merci Medlinx Chatbot",
       category: ProjectCategory.CHATBOT,
-      image: medlinxLogo,
+      image: "https://assets.septianfauzi.com/images/medlinx-logo.png",
       imageList: [],
       videoLink: "/merci-demo.mp4",
       techStack: "Kata.ai Platform, YML, Natural Language, Web Widget",
@@ -159,8 +135,12 @@ function PortfolioProject() {
       id: 9,
       title: "Nisa DKT Indonesia Chatbot",
       category: ProjectCategory.CHATBOT,
-      image: dktLogo,
-      imageList: [dktChatbot1, dktChatbot2, dktChatbot3],
+      image: "https://assets.septianfauzi.com/images/dkt-logo.png",
+      imageList: [
+        "https://assets.septianfauzi.com/images/dkt-chatbot-1.png",
+        "https://assets.septianfauzi.com/images/dkt-chatbot-2.png",
+        "https://assets.septianfauzi.com/images/dkt-chatbot-3.png",
+      ],
       techStack: "Kata.ai Platform, YML, Natural Language, Web Widget",
       client: "DKT Indonesia",
       description:
@@ -170,7 +150,7 @@ function PortfolioProject() {
       id: 8,
       title: "Tara Tempo.co Chatbot",
       category: ProjectCategory.CHATBOT,
-      image: tempoLogo,
+      image: "https://assets.septianfauzi.com/images/tempo-logo.png",
       imageList: [],
       videoLink: "/tara-demo.mp4",
       techStack: "Kata.ai Platform, YML, Natural Language, Web Widget",
@@ -273,7 +253,7 @@ function PortfolioProject() {
                         openModalBox();
                         setModalContent(project);
                       }}
-                      src={project.image.src}
+                      src={project.image}
                       className="cursor-pointer transition duration-200 ease-in-out p-3 group-hover:scale-105 max-w-60 max-h-48 object-contain"
                       alt="Picture of the author"
                       width={300}
