@@ -4,7 +4,7 @@ import "../../../styles/globals.css";
 import PortfolioProfile from "../../components/Portfolio/PortfolioProfile";
 import PortfolioSidebarNavigation from "../../components/Portfolio/PortfolioSidebarNavigation";
 import PortfolioNavigation from "../../components/Portfolio/PortfolioNavigation";
-import bg from "../../../assets/images/background-portfolio-1.jpg";
+import bg from "../../../assets/images/background-portfolio-1.webp";
 export const metadata: Metadata = {
   title: "Septian Fauzi - Frontend Developer",
   description:

@@ -21,6 +21,7 @@ function PortfolioNavigation() {
         <button
           className="lg:hidden size-12 rounded-full p-4 shadow-xl bg-primary-2-darker dark:bg-gray-700"
           onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
+          aria-label="Toggle Mobile Menu"
         >
           {isOpenMobileMenu ? (
             <FaTimes className="text-white" />
@@ -52,6 +53,7 @@ function PortfolioNavigation() {
                     setIsOpenMobileMenu(false);
                   }, 300);
                 }}
+                aria-label="Home"
               >
                 <FaAddressCard />
                 About
@@ -71,6 +73,7 @@ function PortfolioNavigation() {
                     setIsOpenMobileMenu(false);
                   }, 300);
                 }}
+                aria-label="Resume"
               >
                 <FaFileAlt />
                 Resume
@@ -90,6 +93,7 @@ function PortfolioNavigation() {
                     setIsOpenMobileMenu(false);
                   }, 300);
                 }}
+                aria-label="Project"
               >
                 <FaBriefcase />
                 Project

@@ -19,6 +19,8 @@ function PortfolioProfile() {
           src={personPicture}
           className="rounded-2xl size-60 object-cover lg:-mt-[50%] border-white border-solid border-4 dark:border-slate-700"
           alt="Picture of the author"
+          rel="preloaded"
+          loading="eager"
           width={300}
           height={300}
         />
@@ -37,6 +39,7 @@ function PortfolioProfile() {
                 href="https://www.linkedin.com/in/septian-fauzi-09sf/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Linkedin"
               >
                 <FaLinkedin className="text-2xl" />
               </a>
@@ -47,6 +50,7 @@ function PortfolioProfile() {
                 href="https://github.com/SeptianFauzi"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Github"
               >
                 <FaGithubAlt className="text-2xl" />
               </a>
@@ -57,6 +61,7 @@ function PortfolioProfile() {
                 href="https://www.instagram.com/septianfauzi9"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Instagram"
               >
                 <FaInstagram className="text-2xl" />
               </a>
@@ -72,6 +77,7 @@ function PortfolioProfile() {
               target="_blank"
               rel="noreferrer"
               href="mailto:fauzy434@gmail.com"
+              aria-label="Email"
             >
               <FaEnvelope />
             </Link>
@@ -88,6 +94,7 @@ function PortfolioProfile() {
               href="https://maps.app.goo.gl/5TQTE56yafYE3VUg6"
               target="_blank"
               rel="noreferrer"
+              aria-label="Location"
             >
               <FaMapMarkerAlt />
             </Link>
@@ -106,9 +113,13 @@ function PortfolioProfile() {
             target="_blank"
             href="https://septianfauzi.com/assets/CV/CV_Septian_Fauzi_2024.pdf"
             rel="noreferrer"
+            aria-label="Download CV"
           >
             <FaFileDownload className="text-2xl text-white dark:text-slate-400" />
-            <button className="mx-1 text-white font-medium dark:bg-slate-800 dark:text-slate-400 ">
+            <button
+              className="mx-1 text-white font-medium dark:bg-slate-800 dark:text-slate-400 "
+              aria-label="Download CV"
+            >
               Download CV
             </button>
           </Link>

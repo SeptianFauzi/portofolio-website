@@ -27,6 +27,7 @@ function PortfolioSidebarNavigation() {
               } size-full  rounded-xl flex flex-col items-center justify-center shadow-lg p-4 text-sm`}
               rel="noreferrer"
               href={"/"}
+              aria-label="Home"
             >
               <FaAddressCard className="text-2xl mb-2" />
               About
@@ -41,6 +42,7 @@ function PortfolioSidebarNavigation() {
               } size-full rounded-xl flex flex-col items-center justify-center shadow-lg p-4 text-sm`}
               rel="noreferrer"
               href="/resume"
+              aria-label="Resume"
             >
               <FaFile className="text-2xl mb-2" />
               Resume
@@ -55,6 +57,7 @@ function PortfolioSidebarNavigation() {
               } size-full rounded-xl flex flex-col items-center justify-center shadow-lg p-4 text-sm`}
               rel="noreferrer"
               href="/project"
+              aria-label="Projects"
             >
               <FaBriefcase className="text-2xl mb-2" />
               Projects

@@ -31,7 +31,7 @@ function PortfolioProject() {
       id: 2,
       title: "Konnek MultiChannel Platform",
       category: ProjectCategory.Web,
-      image: "https://assets.septianfauzi.com/images/konnek-logo.png",
+      image: "https://assets.septianfauzi.com/images/konnek-logo.webp",
       imageList: [
         "https://assets.septianfauzi.com/images/konnek-login.png",
         "https://assets.septianfauzi.com/images/konnek-general-data.png",
@@ -50,7 +50,7 @@ function PortfolioProject() {
       id: 3,
       title: "Tempo.co Tara Account Management ",
       category: ProjectCategory.Web,
-      image: "https://assets.septianfauzi.com/images/tempo-logo.png",
+      image: "https://assets.septianfauzi.com/images/tempo-logo.webp",
       imageList: [
         "https://assets.septianfauzi.com/images/tempo-login.png",
         "https://assets.septianfauzi.com/images/tempo-richmenu.png",
@@ -67,7 +67,7 @@ function PortfolioProject() {
       id: 4,
       title: "E-DKM Al-Irfan Dashboard",
       category: ProjectCategory.Web,
-      image: "https://assets.septianfauzi.com/images/edkm-logo2.png",
+      image: "https://assets.septianfauzi.com/images/edkm-logo2.webp",
       imageList: [
         "https://assets.septianfauzi.com/images/edkm-login.png",
         "https://assets.septianfauzi.com/images/edkm-detail-peserta.png",
@@ -96,7 +96,7 @@ function PortfolioProject() {
       id: 6,
       title: "E-DKM Android Mobile Application",
       category: ProjectCategory.MobileApp,
-      image: "https://assets.septianfauzi.com/images/edkm-logo2.png",
+      image: "https://assets.septianfauzi.com/images/edkm-logo2.webp",
       imageList: [
         "https://assets.septianfauzi.com/images/edkm-mobile-1.png",
         "https://assets.septianfauzi.com/images/edkm-mobile-2.png",
@@ -150,7 +150,7 @@ function PortfolioProject() {
       id: 8,
       title: "Tara Tempo.co Chatbot",
       category: ProjectCategory.CHATBOT,
-      image: "https://assets.septianfauzi.com/images/tempo-logo.png",
+      image: "https://assets.septianfauzi.com/images/tempo-logo.webp",
       imageList: [],
       videoLink: "/tara-demo.mp4",
       techStack: "Kata.ai Platform, YML, Natural Language, Web Widget",

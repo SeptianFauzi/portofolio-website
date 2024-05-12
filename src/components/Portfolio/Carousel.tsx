@@ -29,6 +29,7 @@ function Carousel({ images }: { images: string[] }) {
           className="absolute
           left-2 top-1/2 rounded-full border border-slate-600 size-8 flex justify-center items-center"
           onClick={handleScrollLeft}
+          aria-label="Scroll Left"
         >
           <FaChevronLeft />
         </button>
@@ -55,6 +56,7 @@ function Carousel({ images }: { images: string[] }) {
         <button
           className="absolute right-2 top-1/2 rounded-full border border-slate-600 size-8 flex justify-center items-center "
           onClick={handleScrollRight}
+          aria-label="Scroll Right"
         >
           <FaChevronRight />
         </button>

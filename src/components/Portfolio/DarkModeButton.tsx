@@ -26,6 +26,7 @@ function DarkModeButton() {
     <button
       className="size-12 bg-slate-50 dark:bg-gray-700 rounded-full p-4 shadow-xl"
       onClick={toggleDarkMode}
+      aria-label="Toggle Dark Mode"
     >
       {theme === "dark" ? (
         <FaSun className=" text-white" />
