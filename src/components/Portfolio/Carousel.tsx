@@ -41,6 +41,7 @@ function Carousel({ images }: { images: string[] }) {
           {images &&
             images.map((image, index) => (
               <Image
+                unoptimized
                 id="image-1"
                 src={image}
                 className="h-96 w-full rounded-md border border-slate-200 snap-center object-contain"

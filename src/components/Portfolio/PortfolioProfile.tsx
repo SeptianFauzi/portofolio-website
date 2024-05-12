@@ -15,6 +15,7 @@ function PortfolioProfile() {
     <div className="lg:max-w-80 lg:min-w-80 w-full rounded-2xl bg-white p-7 h-fit lg:sticky top-[110px] dark:bg-slate-700">
       <div className="flex items-center flex-col gap-8">
         <Image
+          unoptimized
           src={personPicture}
           className="rounded-2xl size-60 object-cover lg:-mt-[50%] border-white border-solid border-4 dark:border-slate-700"
           alt="Picture of the author"

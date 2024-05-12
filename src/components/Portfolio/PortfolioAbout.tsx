@@ -203,6 +203,7 @@ function PortfolioAbout() {
                 key={index}
               >
                 <Image
+                  unoptimized
                   src={item.logo}
                   alt="html"
                   className="rounded-lg my-auto pb-1"

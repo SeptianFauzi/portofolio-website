@@ -188,36 +188,40 @@ function PortfolioProject() {
           <ul className="flex gap-4 cursor-pointer">
             <li
               className={`${
-                category === "" &&
-                "dark:text-primary text-primary transition-colors duration-200 ease-in "
-              } dark:text-slate-400`}
+                category === ""
+                  ? "dark:text-primary text-primary"
+                  : "dark:text-slate-400"
+              } transition-colors duration-200 ease-in `}
               onClick={() => setCategory("")}
             >
               All
             </li>
             <li
               className={`${
-                category === ProjectCategory.Web &&
-                "dark:text-primary text-primary transition-colors duration-200 ease-in"
-              } dark:text-slate-400`}
+                category === ProjectCategory.Web
+                  ? "dark:text-primary text-primary"
+                  : "dark:text-slate-400"
+              } transition-colors duration-200 ease-in`}
               onClick={() => setCategory(ProjectCategory.Web)}
             >
               Web
             </li>
             <li
               className={`${
-                category === ProjectCategory.MobileApp &&
-                "dark:text-primary text-primary transition-colors duration-200 ease-in"
-              } dark:text-slate-400`}
+                category === ProjectCategory.MobileApp
+                  ? "dark:text-primary text-primary"
+                  : "dark:text-slate-400"
+              } transition-colors duration-200 ease-in`}
               onClick={() => setCategory(ProjectCategory.MobileApp)}
             >
               Mobile App
             </li>
             <li
               className={`${
-                category === ProjectCategory.CHATBOT &&
-                "dark:text-primary text-primary transition-colors duration-200 ease-in"
-              } dark:text-slate-400`}
+                category === ProjectCategory.CHATBOT
+                  ? "dark:text-primary text-primary"
+                  : "dark:text-slate-400"
+              } transition-colors duration-200 ease-in`}
               onClick={() => setCategory(ProjectCategory.CHATBOT)}
             >
               Chatbot
@@ -249,6 +253,7 @@ function PortfolioProject() {
                 <div className="flex flex-col gap-4 p-4">
                   <div className=" bg-white rounded-2xl flex justify-center items-center h-48">
                     <Image
+                      unoptimized
                       onClick={() => {
                         openModalBox();
                         setModalContent(project);
