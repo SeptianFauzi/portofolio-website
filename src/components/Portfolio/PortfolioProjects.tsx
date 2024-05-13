@@ -282,7 +282,7 @@ function PortfolioProject() {
                       </p>
                     </div>
                     <p
-                      className="text-base text-white cursor-pointer hover:text-primary-2-darker"
+                      className="text-base text-slate-800 cursor-pointer hover:text-primary-2-darker"
                       onClick={() => {
                         openModalBox();
                         setModalContent(project);

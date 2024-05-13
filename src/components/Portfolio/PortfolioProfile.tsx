@@ -82,7 +82,7 @@ function PortfolioProfile() {
               <FaEnvelope />
             </Link>
             <div className="flex flex-col justify-between">
-              <p className="text-xs text-slate-500">Email</p>
+              <p className="text-xs text-slate-700">Email</p>
               <p className="text-base dark:text-slate-400">
                 fauzy434@gmail.com
               </p>
@@ -99,7 +99,7 @@ function PortfolioProfile() {
               <FaMapMarkerAlt />
             </Link>
             <div className="flex flex-col justify-between">
-              <p className="text-xs text-slate-500">Location</p>
+              <p className="text-xs text-slate-700">Location</p>
               <p className="text-base dark:text-slate-400">Bogor, Indonesia</p>
             </div>
           </div>
